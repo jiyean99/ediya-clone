@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width,initial-scale=1.0">
+    <title>ediya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>  -->
+    <script src="js/script.js"></script>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="clearfix">
+        <nav class="top-nav">
+            <div class="top-menu">
+                <ul>
+                    <li class="on">
+                        <a href="index.html">메인 사이트</a>
+                    </li>
+                    <li>
+                        <a href="elogin.html">로그인</a>
+                    </li>
+                    <li>
+                        <a href="elogup.html">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-menu-right">
+                <ul class="top-sns">
+                    <li>
+                        <a href="#" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"></a>
+                    </li>
+                </ul>
+                <div class="top-search">
+                    <form action="search">
+                        <input type="text" name="search" id="search">
+                        <span></span>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="top_logo"> <!-- ※caution※ top-logo (x) top_logo(o) -->
+            <a href="https://www.ediya.com/" target="_blank">
+                <img src="https://ediya.com/images/common/top_logo.gif" alt="logo">
+            </a>
+        </div>
+
+        <nav class="gnb-nav">
+
+            <ul class="gnb-main">
+                <li>
+                    <a href="#">원두<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">이디야 블랜드</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">메뉴<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">음료</a>
+                        </li>
+                        <li>
+                            <a href="#">푸드</a>
+                        </li>
+                        <li>
+                            <a href="#">MD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">유통제품<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">스틱커피(비니스트)</a>
+                        </li>
+                        <li>
+                            <a href="#">커피믹스</a>
+                        </li>
+                        <li>
+                            <a href="#">캡슐커피</a>
+                        </li>
+                        <li>
+                            <a href="#">컵커피</a>
+                        </li>
+                        <li>
+                            <a href="#">수출입거래</a>
+                        </li>
+                        <li>
+                            <a href="#">B2B/특판/대리점 거래</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">이디야멤버스<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">멤버스 소개</a>
+                        </li>
+                        <li>
+                            <a href="#">이디야카드</a>
+                        </li>
+                        <li>
+                            <a href="#">선물하기</a>
+                        </li>
+                        <li>
+                            <a href="#">이디야오더</a>
+                        </li>
+                        <li>
+                            <a href="#">자주하는 질문</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">상품권<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">기프트카드</a>
+                        </li>
+                        <li>
+                            <a href="#">모바일상품권</a>
+                        </li>
+                        <li>
+                            <a href="#">단체.기업.구매</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사회공헌<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">메이트 희망기금</a>
+                        </li>
+                        <li>
+                            <a href="#">캠퍼스 희망기금</a>
+                        </li>
+                        <li>
+                            <a href="#">식수위생 캠페인</a>
+                        </li>
+                        <li>
+                            <a href="#">이디야의 동행</a>
+                        </li>
+                        <li>
+                            <a href="#">기타활동</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">공지사항<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">이디야 소식</a>
+                        </li>
+                        <li>
+                            <a href="#">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="#">홈카페 레시피</a>
+                        </li>
+                        <li>
+                            <a href="#">이디야 유튜브</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="nav-btn">
+            <span></span>
+            <ul class="nav-aside">
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="clearfix">
+        <div class="main-slide">
+            <ul class="main-img-panel">
+                <li>
+                    <img src="ediya-image/main-desktop/main-d-01.jpg" alt="main-slide-1">
+                </li>
+                <li>
+                    <img src="ediya-image/main-desktop/main-d-02.jpg" alt="main-slide-2">
+                </li>
+                <li>
+                    <img src="ediya-image/main-desktop/main-d-03.jpg" alt="main-slide-3">
+                </li>
+                <li>
+                    <img src="ediya-image/main-desktop/main-d-04.jpg" alt="main-slide-4">
+                </li>
+                <li>
+                    <img src="ediya-image/main-desktop/main-d-05.jpg" alt="main-slide-5">
+                </li>
+                <li>
+                    <img src="ediya-image/main-desktop/main-d-06.jpg" alt="main-slide-6">
+                </li>
+            </ul>
+            <ul class="main-img-panel-tablet">
+                <li>
+                    <img src="ediya-image/main-tablet/main-t-01.jpg" alt="main-slide-1">
+                </li>
+                <li>
+                    <img src="ediya-image/main-tablet/main-t-02.jpg" alt="main-slide-2">
+                </li>
+                <li>
+                    <img src="ediya-image/main-tablet/main-t-03.jpg" alt="main-slide-3">
+                </li>
+                <li>
+                    <img src="ediya-image/main-tablet/main-t-04.jpg" alt="main-slide-4">
+                </li>
+                <li>
+                    <img src="ediya-image/main-tablet/main-t-05.jpg" alt="main-slide-5">
+                </li>
+                <li>
+                    <img src="ediya-image/main-tablet/main-t-06.jpg" alt="main-slide-6">
+                </li>
+            </ul>
+            <ul class="main-img-panel-mobile">
+                <li>
+                    <img src="ediya-image/main-mobile/main-m-01.jpg" alt="main-slide-1">
+                </li>
+                <li>
+                    <img src="ediya-image/main-mobile/main-m-02.jpg" alt="main-slide-2">
+                </li>
+                <li>
+                    <img src="ediya-image/main-mobile/main-m-03.jpg" alt="main-slide-3">
+                </li>
+                <li>
+                    <img src="ediya-image/main-mobile/main-m-04.jpg" alt="main-slide-4">
+                </li>
+                <li>
+                    <img src="ediya-image/main-mobile/main-m-05.jpg" alt="main-slide-5">
+                </li>
+                <li>
+                    <img src="ediya-image/main-mobile/main-m-06.jpg" alt="main-slide-6">
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="main-indi">
+                <li class="main-indi-on"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="main-prev">
+            <img src="https://www.ediya.com/C/images/main/main_visual_prev.png" alt="prev">
+        </div>
+        <div class="main-next">
+            <img src="https://ediya.com/C/images/main/main_visual_next.png" alt="next">
+        </div>
+    </main>
+
+    <div class="popup clearfix">
+        <div class="popup-img">
+            <img src="ediya-image/popup/popup.png" alt="popup"></a>
+        </div>
+        <div class="popup-close">
+            <img src="ediya-image/popup/popup-close.png" alt="popup-close">
+        </div>
+    </div>
+
+    <section class="section-1 clearfix">
+        <article class="section1-cont1">
+            <h2><span>beanist</span> information card</h2>
+            <h3>비니스트는 <span>BEAN+Specialist</span>의 합성어로 <span>오직 커피만을 생각해온 커피 전문가</span>를 의미합니다.</h3>
+        </article>
+
+        <article class="section1-slide">
+            <div class="section1-slide-panel">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="ediya-image/section1/cont1-1.png" alt="sec1-cont1-1">
+                                    <dl>
+                                        <dt>비니스트 오리지널 아메리카노</dt>
+                                        <dd>beanist original americano</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="ediya-image/section1/cont1-2.png" alt="sec1-cont1-2">
+                                    <dl>
+                                        <dt>비니스트 마일드 아메리카노</dt>
+                                        <dd>beanist mild americano</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="ediya-image/section1/cont1-3.png" alt="sec1-cont1-3">
+                                    <dl>
+                                        <dt>비니스트 스페셜 아메리카노</dt>
+                                        <dd>beanist special americano</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="ediya-image/section1/cont2-1.png" alt="sec1-cont1-1">
+                                    <dl>
+                                        <dt>비니스트 카페 라떼</dt>
+                                        <dd>beanist cafe latte</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="ediya-image/section1/cont2-2.png" alt="sec1-cont1-2">
+                                    <dl>
+                                        <dt>비니스트 바닐라 라떼</dt>
+                                        <dd>beanist vanilla latte</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="ediya-image/section1/cont2-3.png" alt="sec1-cont1-2">
+                                    <dl>
+                                        <dt>비니스트 초콜릿 칩 라떼</dt>
+                                        <dd>beanist chocolate chip latte</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="ediya-image/section1/cont2-4.png" alt="sec1-cont1-2">
+                                    <dl>
+                                        <dt>비니스트 토피 넛 라떼</dt>
+                                        <dd>beanist toffe nut latte</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul style="padding: 0 150px;">
+                            <li>
+                                <a href="#">
+                                    <img src="ediya-image/section1/cont3-1.png" alt="sec1-cont1-1">
+                                    <dl>
+                                        <dt>모카블렌드 커피믹스</dt>
+                                        <dd>mocha blend coffe mix</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="ediya-image/section1/cont3-2.png" alt="sec1-cont1-2">
+                                    <dl>
+                                        <dt>골드블렌드 커피믹스</dt>
+                                        <dd>gold blend coffe mix</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <div class="section1-indi">
+            <ul>
+                <li class="section1-indi-on"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-2 clearfix">
+        <div class="section2-cont">
+            <h2>
+                <span></span>ediya coffee
+            </h2>
+            <h4>최첨단 시설에서 탄생하는 고품질의 원두로<br>
+                최고의 커피맛을 고객들에게 제공합니다.
+            </h4>
+            <div class="section2-btn">
+                <button>드림 팩토리</button>
+                <button>드림 물류센터</button>
+            </div>
+        </div>
+        <div class="section2-img">
+            <img src="ediya-image/section2/dream_factory.png" alt="">
+        </div>
+    </section>
+
+    <section class="section-3 clearfix">
+        <h2>ALWAYS BESIDE YOU, <span>EDIYA COFFEE</span></h2>
+        <h3>늘 당신 곁에, 이디야 커피의 다양한 메뉴를 맛보세요.</h3>
+        <button>메뉴보기</button>
+    </section>
+
+    <section class="section-4 clearfix">
+        <div class="section4-cont">
+            <div>
+                <h2>고객과 가맹점주, 협력사의<br>상생의 가치를 실천합니다.</h2>
+                <h4>해외에 로열티를 내지 않는 순수한 국내브랜드로 <br>
+                    품질좋고 맛있는 정직한 커피를 제공합니다. </h4>
+                <div class="section4-btn">
+                    <button>창업안내</button>
+                    <button>창업설명회 안내</button>
+                    <button>브랜드소개</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-5 clearfix">
+        <div>
+            <div class="section5-cont1">
+                <h3>가맹점 개설 안내</h3>
+                <h4>성공 창업을 위한 선택</h4>
+            </div>
+
+            <div class="section5-cont2">
+                <h3>매장찾기</h3>
+                <h4>가까운 이디야 매장을 <br> 확인해보세요.</h4>
+                <form action="findstore">
+                    <input type="text" name="findstore" id="findstore" placeholder="FIND A STORE">
+                    <a href="#">
+                        <img src="https://www.ediya.com/images/main/main_store_btn.png" alt="store-icon">
+                    </a>
+                </form>
+            </div>
+
+            <div class="section5-cont3">
+                <div class="section5-notice">
+                    <h3>이디야 소식</h3>
+                    <div class="notice-btn">
+                        <a href="#">
+                            <img src="	https://www.ediya.com/images/main/main_news_more.png" alt="notice-btn">
+                        </a>
+                    </div>
+                    <ul class="notice-cont">
+                        <li>
+                            <a href="#">이디야 미니블렌더 (크림아이보리) 판매매장 안내</a>
+                            <span>2022.08.07</span>
+                        </li>
+                        <li>
+                            <a href="#">이디야 감성 미니가전 '미니블렌더' 출시 (8/8~)</a>
+                            <span>2022.07.26</span>
+                        </li>
+                        <li>
+                            <a href="#">커피랩(Coffeelab) 영업시간 공지</a>
+                            <span>2022.06.10</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section5-broc">
+                    <img src="https://www.ediya.com/images/main/main_brochure_img.png" alt="">
+                    <h3>브로슈어 다운받기</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="section5-bg"></div>
+    </section>
+    <footer class="clearfix">
+        <div class="footer-pc">
+        <div>
+          <div class="footer-top">
+            <ul>
+              <li><a href="#">영상정보처리기기 운영·관리방침</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">멤버스 이용약관</a></li>
+              <li><a href="#">가맹 안내</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">점주의 방</a></li>
+            </ul>
+            <form class="footer-lang">
+              <select>
+                  <option>Korean</option>
+                  <option>English</option>
+                  <option>Chinese</option>
+              </select>
+          </form>
+          </div>  
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <a href="https://www.ediya.com/" target="_blank">
+                <img src="ediya-image/footer/bottom_logo.gif" alt="footer-logo"> 
+            </a>
+          </div>
+          <p class="footer-info">
+            <span>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span> <span>TEL : 02-543-6467</span> FAX : 02-543-7191
+            <span>사업자등록번호 : 107-86-16302</span> 
+            <span>통신판매업 신고 : 강남 제 002519호</span> 대표이사 : 문창기
+          </p>
+          <p class="footer-copy">ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
+          <div class="footer-ccm">
+            <img src="ediya-image/footer/footer_ccm.png" alt="ccm">
+          </div>
+        </div>
+        </div>
+        <div class="footer-tablet">
+            <div>
+              <div class="footer-top">
+                <ul>
+                  <li><a href="#">영상정보처리기기 운영·관리방침</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><a href="#">멤버스 이용약관</a></li>
+                  <li><a href="#">가맹 안내</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                  <li><a href="#">점주의 방</a></li>
+                </ul>
+                
+              </div>  
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-ccm-tablet">
+                    <img src="ediya-image/footer/footer_ccm.png" alt="ccm">
+                  </div>
+                <form class="footer-lang-tablet">
+                    <select>
+                        <option>Korean</option>
+                        <option>English</option>
+                        <option>Chinese</option>
+                    </select>
+                </form>
+               
+              <div class="footer-logo-tablet">
+                <a href="https://www.ediya.com/" target="_blank">
+                    <img src="ediya-image/footer/bottom_logo.gif" alt="footer-logo"> 
+                </a>
+              </div>
+              <p class="footer-info">
+                <span>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span> <span>TEL : 02-543-6467</span> FAX : 02-543-7191
+                <span>사업자등록번호 : 107-86-16302</span> 
+                <span>통신판매업 신고 : 강남 제 002519호</span> 대표이사 : 문창기
+              </p>
+              <p class="footer-copy">ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
+              
+            </div>
+        </div>
+        
+    
+    </footer>
+</body>
+
+</html>

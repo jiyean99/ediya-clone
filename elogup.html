@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/elogup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(function(){
+            var idval = $('#mail');
+            $('#mail-select').change(function(){
+                var element = $(this).find('option:select');
+                var myTag = element.attr('mail_value');
+                idval.val(myTag);
+            });
+        });
+        $(function () {
+            $(".top-menu ul li").on('click', function () {
+                $(".top-menu ul li").removeClass("on");
+                $(this).addClass("on");
+            });
+        });
+
+    </script>
+</head>
+<body>
+<div class="scale">
+    <header class="clearfix">
+        <nav class="top-nav">
+            <div class="top-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">메인 사이트</a>
+                    </li>
+                    <li>
+                        <a href="elogin.html">로그인</a>
+                    </li>
+                    <li class="on">
+                        <a href="elogup.html">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-menu-right">
+                <ul class="top-sns">
+                    <li>
+                        <a href="#" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"></a>
+                    </li>
+                </ul>
+                <div class="top-search">
+                    <form action="search">
+                        <input type="text" name="search" id="search">
+                        <span></span>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="top_logo"> <!-- ※caution※ top-logo (x) top_logo(o) -->
+            <a href="https://www.ediya.com/" target="_blank">
+                <img src="https://ediya.com/images/common/top_logo.gif" alt="logo">
+            </a>
+        </div>
+
+        <nav class="gnb-nav">
+
+            <ul class="gnb-main">
+                <li>
+                    <a href="#">원두<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">이디야 블랜드</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">메뉴<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">음료</a>
+                        </li>
+                        <li>
+                            <a href="#">푸드</a>
+                        </li>
+                        <li>
+                            <a href="#">MD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">유통제품<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">스틱커피(비니스트)</a>
+                        </li>
+                        <li>
+                            <a href="#">커피믹스</a>
+                        </li>
+                        <li>
+                            <a href="#">캡슐커피</a>
+                        </li>
+                        <li>
+                            <a href="#">컵커피</a>
+                        </li>
+                        <li>
+                            <a href="#">수출입거래</a>
+                        </li>
+                        <li>
+                            <a href="#">B2B/특판/대리점 거래</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">이디야멤버스<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">멤버스 소개</a>
+                        </li>
+                        <li>
+                            <a href="#">이디야카드</a>
+                        </li>
+                        <li>
+                            <a href="#">선물하기</a>
+                        </li>
+                        <li>
+                            <a href="#">이디야오더</a>
+                        </li>
+                        <li>
+                            <a href="#">자주하는 질문</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">상품권<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">기프트카드</a>
+                        </li>
+                        <li>
+                            <a href="#">모바일상품권</a>
+                        </li>
+                        <li>
+                            <a href="#">단체.기업.구매</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사회공헌<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">메이트 희망기금</a>
+                        </li>
+                        <li>
+                            <a href="#">캠퍼스 희망기금</a>
+                        </li>
+                        <li>
+                            <a href="#">식수위생 캠페인</a>
+                        </li>
+                        <li>
+                            <a href="#">이디야의 동행</a>
+                        </li>
+                        <li>
+                            <a href="#">기타활동</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">공지사항<span></span></a>
+                    <ul class="gnb-sub">
+                        <li>
+                            <a href="#">이디야 소식</a>
+                        </li>
+                        <li>
+                            <a href="#">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="#">홈카페 레시피</a>
+                        </li>
+                        <li>
+                            <a href="#">이디야 유튜브</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="nav-btn">
+            <span></span>
+            <ul class="nav-aside">
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="s-title">
+            <h1>회원가입</h1>
+            <img src="images/icons8-barista-96.png" alt="barista">
+            <p>회원가입 약관 동의 및 본인인증 단계입니다.</p>
+        </section>
+        <section class="s-form">
+            <form action="signup">
+                <article class="make-mem">
+                    <h3>이메일을 입력해주세요.</h3>
+                    <p>이메일은 멤버스 로그인 시 아이디로 사용됩니다.</p>
+                    <input type="text" class="i-1" placeholder="이메일" required>
+                    <p>@</p>
+                    <select name="mail" id="mail-select" class="i-2" >
+                        <option value="">직접입력</option>
+                        <option value="naver">naver.com</option>
+                        <option value="daum">daum.net</option>
+                        <option value="google">google.com</option>
+                        <option value="nate">nate.com</option>
+                    </select>
+                </article>
+                <article class="agree">
+                    <label for="c-1">
+                        <h3>개인정보 수집 및 동의 <span>(필수)</span></h3>
+                    </label>
+                    <input type="checkbox" id="c-1" required>
+                    <div class="re-text1">
+                        <span>이 약관은 (주)이디야(이하 ‘회사’ 또는 ‘이디야’라고 함)가 제공하는 멤버십 서비스(이하 ‘이디야멤버스’라고 함)의 이용과 관련하여 필요한 이용 조건, 절차 및 ’회사’와 ‘회원’간의 권리, 의무 등 기본적인 사항을 규정하는 것을 목적으로 합니다.</span><br><br>1. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.2. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.3. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.<br><span>이 약관은 (주)이디야(이하 ‘회사’ 또는 ‘이디야’라고 함)가 제공하는 멤버십 서비스(이하 ‘이디야멤버스’라고 함)의 이용과 관련하여 필요한 이용 조건, 절차 및 ’회사’와 ‘회원’간의 권리, 의무 등 기본적인 사항을 규정하는 것을 목적으로 합니다.</span><br><br>4. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.<br>5. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.<br><span>이 약관은 (주)이디야(이하 ‘회사’ 또는 ‘이디야’라고 함)가 제공하는 멤버십 서비스(이하 ‘이디야멤버스’라고 함)의 이용과 관련하여 필요한 이용 조건, 절차 및 ’회사’와 ‘회원’간의 권리, 의무 등 기본적인 사항을 규정하는 것을 목적으로 합니다.</span><br><br>4. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.<br>5. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.
+                        <br><span>이 약관은 (주)이디야(이하 ‘회사’ 또는 ‘이디야’라고 함)가 제공하는 멤버십 서비스(이하 ‘이디야멤버스’라고 함)의 이용과 관련하여 필요한 이용 조건, 절차 및 ’회사’와 ‘회원’간의 권리, 의무 등 기본적인 사항을 규정하는 것을 목적으로 합니다.</span><br><br>4. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.<br>5. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.
+                    </div>
+                    <br><br>
+                    <label for="c-2">
+                        <h3>이디야 멤버스 서비스 이용약관 동의 <span>(필수)</span></h3>
+                    </label>
+                    <input type="checkbox" id="c-2">
+                    <div class="re-text2">
+                        <span>이 약관은 (주)이디야(이하 ‘회사’ 또는 ‘이디야’라고 함)가 제공하는 멤버십 서비스(이하 ‘이디야멤버스’라고 함)의 이용과 관련하여 필요한 이용 조건, 절차 및 ’회사’와 ‘회원’간의 권리, 의무 등 기본적인 사항을 규정하는 것을 목적으로 합니다.</span><br><br>1. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.2. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.3. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.<br><span>이 약관은 (주)이디야(이하 ‘회사’ 또는 ‘이디야’라고 함)가 제공하는 멤버십 서비스(이하 ‘이디야멤버스’라고 함)의 이용과 관련하여 필요한 이용 조건, 절차 및 ’회사’와 ‘회원’간의 권리, 의무 등 기본적인 사항을 규정하는 것을 목적으로 합니다.</span><br<br>>4. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.<br>5. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.<br><span >이 약관은 (주)이디야(이하 ‘회사’ 또는 ‘이디야’라고 함)가 제공하는 멤버십 서비스(이하 ‘이디야멤버스’라고 함)의 이용과 관련하여 필요한 이용 조건, 절차 및 ’회사’와 ‘회원’간의 권리, 의무 등 기본적인 사항을 규정하는 것을 목적으로 합니다.</span><br><br>4. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.<br>5. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.
+                        <br><span>이 약관은 (주)이디야(이하 ‘회사’ 또는 ‘이디야’라고 함)가 제공하는 멤버십 서비스(이하 ‘이디야멤버스’라고 함)의 이용과 관련하여 필요한 이용 조건, 절차 및 ’회사’와 ‘회원’간의 권리, 의무 등 기본적인 사항을 규정하는 것을 목적으로 합니다.</span><br><br>4. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.<br>5. ‘이디야멤버스’란 ‘스탬프’ 적립, ‘쿠폰’의 발행 및 이용, 선물하기, 이디야오더 등 ‘회사’가 ‘회원’에게 제공하는 멤버십 서비스를 통칭하여 말합니다.
+                    </div>
+                    <br><br>
+    
+                    <label for="c-3" required>
+                        <h3>위치기반서비스 이용약관 동의 <span>(선택)</span></h3> 
+                    </label>
+                    <input type="checkbox" id="c-3"><br><br><br>
+    
+                    <label for="c-4">
+                        <h3>마케팅 활용 수신동의 <span>(선택)</span></h3> 
+                    </label>
+                    <input type="checkbox" id="c-4"><br><br><br>
+    
+                    <label for="c-5">
+                        <h3>광고성 정보 수신 동의 <span>(선택)</span></h3> 
+                    </label>
+                    <input type="checkbox" id="c-5">
+    
+                    <input type="submit" value="가입하기">
+                </article>
+            </form>
+        </section>
+    </main>
+    <footer class="clearfix">
+        <div class="footer-pc">
+        <div>
+          <div class="footer-top">
+            <ul>
+              <li><a href="#">영상정보처리기기 운영·관리방침</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">멤버스 이용약관</a></li>
+              <li><a href="#">가맹 안내</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">점주의 방</a></li>
+            </ul>
+            <form class="footer-lang">
+              <select>
+                  <option>Korean</option>
+                  <option>English</option>
+                  <option>Chinese</option>
+              </select>
+          </form>
+          </div>  
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <a href="https://www.ediya.com/" target="_blank">
+                <img src="ediya-image/footer/bottom_logo.gif" alt="footer-logo"> 
+            </a>
+          </div>
+          <p class="footer-info">
+            <span>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span> <span>TEL : 02-543-6467</span> FAX : 02-543-7191
+            <span>사업자등록번호 : 107-86-16302</span> 
+            <span>통신판매업 신고 : 강남 제 002519호</span> 대표이사 : 문창기
+          </p>
+          <p class="footer-copy">ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
+          <div class="footer-ccm">
+            <img src="ediya-image/footer/footer_ccm.png" alt="ccm">
+          </div>
+        </div>
+        </div>
+        <div class="footer-tablet">
+            <div>
+              <div class="footer-top">
+                <ul>
+                  <li><a href="#">영상정보처리기기 운영·관리방침</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><a href="#">멤버스 이용약관</a></li>
+                  <li><a href="#">가맹 안내</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                  <li><a href="#">점주의 방</a></li>
+                </ul>
+                
+              </div>  
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-ccm-tablet">
+                    <img src="ediya-image/footer/footer_ccm.png" alt="ccm">
+                  </div>
+                <form class="footer-lang-tablet">
+                    <select>
+                        <option>Korean</option>
+                        <option>English</option>
+                        <option>Chinese</option>
+                    </select>
+                </form>
+               
+              <div class="footer-logo-tablet">
+                <a href="https://www.ediya.com/" target="_blank">
+                    <img src="ediya-image/footer/bottom_logo.gif" alt="footer-logo"> 
+                </a>
+              </div>
+              <p class="footer-info">
+                <span>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span> <span>TEL : 02-543-6467</span> FAX : 02-543-7191
+                <span>사업자등록번호 : 107-86-16302</span> 
+                <span>통신판매업 신고 : 강남 제 002519호</span> 대표이사 : 문창기
+              </p>
+              <p class="footer-copy">ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
+              
+            </div>
+            </div>
+        
+    
+    </footer>
+</div>
+</body>
+</html> 

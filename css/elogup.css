@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "roboto","notosanskr", sans-serif;
+    font-weight: 400;
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+    line-height: 0;
+}
+/* sign-up */
+.s-title{
+    width: 670px;
+    margin: 0 auto;
+    text-align: center;
+    border: 0px solid red;
+}
+.s-title h1{
+    font-size: 42px;
+    color: #243c84;
+    font-weight: 600;
+    padding-top: 70px;
+}
+.s-title p{
+    font-size: 24px;
+    color: #3c3c3c;
+    font-weight: 600;
+    padding-bottom: 100px;
+}
+.s-form{
+    width: 670px;
+    margin: 0 auto;
+    border: 0px solid red;
+}
+.make-mem{
+    /* margin-left: 12px; */
+    width: 670px;
+}
+.make-mem h3{
+    font-size: 28px;
+    color: #000;
+    font-weight: 700;
+}
+.make-mem p{
+    font-size: 20px;
+    color: #3c3c3c;
+    font-weight: 600;
+    margin: 30px 0 25px 0;
+}
+.i-1,.i-2{
+    width: 300px;
+    height: 50px;
+    border:2px solid #707070;
+}
+.i-1,.i-2{
+    padding-left: 10px;
+    color: #3c3c3c;
+    font-weight: 600;
+    font-size: 20px;
+}
+.make-mem p:nth-of-type(2){
+    display: inline;
+    font-size: 24px;
+}
+.agree{
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 90px;
+}
+.agree > label{
+    margin-top: 40px;
+}
+.agree h3{
+    color: #3c3c3c;
+}
+.agree span{
+    color: #243c84;
+    font-size: 1rem;
+}
+.re-text1,.re-text2{
+    line-height: 2rem;
+    width: 100%;
+    height: 260px;
+    border: 2px solid #858585;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    /*border-radius: 10px;*/
+    margin: 30px 0;
+    padding: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
+.re-text1::-webkit-scrollbar,.re-text2::-webkit-scrollbar{
+    width: 15px;
+}
+.re-text1::-webkit-scrollbar-thumb,.re-text2::-webkit-scrollbar-thumb{
+    background-color: #858585;
+    /*border-radius: 10px;*/
+    /* border: 100px solid #f7f7f7; */
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.re-text1::-webkit-scrollbar-track,.re-text2::-webkit-scrollbar-track{
+    width: 2px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+input[type="checkbox"]{
+    float: right;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+    background: url("../images/chk-1.png") no-repeat;
+    background-position: center;
+    background-size: 65px;
+    background-color: #858585;
+}
+input[type="checkbox"]:hover{
+    background: url("../images/chk-h.png") no-repeat;
+    background-position: center;
+    background-size: 65px;
+    border: none;
+}
+input[type="checkbox"]:checked{
+    background: url("../images/chk-2.png") no-repeat;
+    background-position: center;
+    background-size: 65px;
+    border: none;
+}
+label{
+   margin-bottom: 30px;
+}
+.agree h3{
+    display: inline-block;
+}
+input[type="submit"]{
+    width: 670px;
+    height: 60px;
+    background-color: #243c84;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 100px 0 70px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #515e85;
+}
+@media screen and (max-width : 700px){
+    .s-title{
+        width: 450px;
+    }
+    .s-title h1{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .s-title p{
+        font-size: 18px;
+        font-weight: 600;
+        color: #707070;
+    }
+   .s-form{
+        width: 450px;
+    }
+   .make-mem{
+        padding: 0;
+    }
+    .make-mem h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .make-mem p{
+        font-size: 14px;
+    }
+    .make-mem p:nth-of-type(2){
+        font-size: 14px;
+        font-weight: 600;
+        margin:  10px 0 25px 0;
+    }
+    .i-1,.i-2{
+        width: 200px;
+    }
+    .i-1,.i-2{
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .agree{
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 90px;
+    }
+    .agree h3{
+        color: #3c3c3c;
+    }
+    .agree span{
+        color: #243c84;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .agree>label>h3{
+        font-size: 18px;
+    }
+    .agree>label>h3>span{
+        font-size: 18px;
+    }
+    .re-text1,.re-text2{
+        line-height: 1rem;
+        width: 100%;
+        height: 260px;
+        border: 2px solid #858585;
+        background-color: #f7f7f7;
+        box-sizing: border-box;
+        overflow-y: scroll;
+        /*border-radius: 10px;*/
+        margin: 30px 0;
+        padding: 30px;
+        font-size: 12px;
+        color: #666;
+    }
+    input[type="checkbox"]{
+        width: 30px;
+        height: 30px;
+        background-size: 40px;
+    }
+    input[type="checkbox"]:hover{
+        background-size: 40px;
+    }
+    input[type="checkbox"]:checked{
+        background-size: 40px;
+    }
+    .make-mem h3{
+        display: inline;
+        margin: 0 5px;
+        font-size: 18px;
+    }
+    input[type="submit"]{
+        width: 100%;
+        height: 60px;
+        background-color: #243c84;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 100px auto;
+        cursor: pointer;
+    }
+}
